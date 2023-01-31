@@ -1,3 +1,9 @@
+/**
+ * Instagram reactnativecodes
+ * github jgsensei 
+ * Daily UI #01
+ * thank you
+ */
 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
@@ -5,13 +11,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-       <Text style={{
-        fontSize: 28,
-        color: "white"
-      }}>Software Engineer...</Text>
       <Text style={{
         fontSize: 28,
-        color: "white"
+        color: "black"
       }}>Daily UI Challenge! 100 Days</Text>
       <StatusBar style="auto" />
     </View>
@@ -21,7 +23,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D61355',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
