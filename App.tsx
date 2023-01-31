@@ -8,23 +8,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={{
-        fontSize: 28,
-        color: "black"
-      }}>Daily UI Challenge! 100 Days</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import {useFonts} from "expo-font"
+import fonts from './config/fonts';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import Navigation from './navigation';
+
+export default function App() {
+
+  const [fontsLoaded] = useFonts(fonts);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
+    return (
+      <SafeAreaProvider>
+       <Navigation />
+        <StatusBar style="auto" />
+      </SafeAreaProvider>
+    );
+
+  
+}
