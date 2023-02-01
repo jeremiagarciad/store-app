@@ -1,3 +1,10 @@
+/**
+ * Instagram reactnativecodes
+ * github jgsensei
+ * Daily UI #01
+ * thank you
+ */
+
 import {
   View,
   Text,
@@ -7,15 +14,20 @@ import {
   ScrollView,
 } from "react-native";
 import { useState } from "react";
-import Container from "../components/container";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
+
+import { Ionicons } from "@expo/vector-icons";
+
+import Container from "../components/container";
+import Input from "../components/input";
+
 import { RootStackParamList } from "../types/types";
 import Spacing from "../constants/Spacing";
-import { categories, products, user, watches } from "../data";
+
+import { categories, user, watches } from "../data";
+
 import Fonts from "../constants/Fonts";
 import Colors from "../constants/Colors";
-import { Ionicons } from "@expo/vector-icons";
-import Input from "../components/input";
 
 type Props = NativeStackScreenProps<RootStackParamList, "Home">;
 
