@@ -96,67 +96,6 @@ export interface Product {
 }
 
 
-export const products: Product[] = [
-  {
-    id: 1,
-    name: "Skinny Fit Blazer",
-    price: 18.0,
-    category: categories[0],
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Odio hendrerit vitae nibh elementum egestas. Duis eleifend turpis tempor purus et aliquam dui risus dui.",
-    // image: require("../assets/products/yellow-ss.jpg"),
-    reviews: 80,
-    rating: 2.5,
-    colors: colors,
-    brand: "Zara",
-    sizes,
-  },
-  {
-    id: 2,
-    name: "Men’s Kinnstor sportswear",
-    price: 76.0,
-    category: categories[0],
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Odio hendrerit vitae nibh elementum egestas. Duis eleifend turpis tempor purus et aliquam dui risus dui.",
-    // image: require("../assets/products/green-j.jpg"),
-    reviews: 28,
-    rating: 3.7,
-    colors: colors,
-    brand: "Zara",
-    sizes,
-  },
-  {
-    id: 3,
-    name: "Violet Hoodie",
-    price: 29.99,
-    category: categories[0],
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Odio hendrerit vitae nibh elementum egestas. Duis eleifend turpis tempor purus et aliquam dui risus dui.",
-    // image: require("../assets/products/hdd.jpg"),
-    reviews: 70,
-    rating: 5,
-    colors: colors,
-    brand: "Zara",
-    sizes,
-  },
-  {
-    id: 4,
-    name: "Fit Blazer",
-    price: 49.0,
-    category: categories[1],
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Odio hendrerit vitae nibh elementum egestas. Duis eleifend turpis tempor purus et aliquam dui risus dui.",
-    // image: require("../assets/products/blue-ish-w.jpg"),
-    reviews: 65,
-    rating: 4.2,
-    colors: colors,
-    brand: "Zara",
-    sizes,
-  },
-];
-
-
-
 export const watches: Product[] = [
   {
     id: 1,
