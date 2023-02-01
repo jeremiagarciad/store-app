@@ -7,7 +7,9 @@
 
 ## Screenshots
 
-![HomeScreen and DetailScreen] pending
+<kbd>
+  <img src="/assets/App.png" />
+</kbd>
 
 <!-- [Starter Project](https://github.com/jgsensei/store-app) -->
 
