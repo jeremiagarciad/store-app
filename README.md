@@ -1,5 +1,7 @@
 # Store-React-Native-App
 
+My first Step with React Native. :airplane:
+
 - Instagram reactnativecodes
 - github jgsensei
 - Daily UI #01
@@ -11,6 +13,11 @@
   <img src="/assets/App.png" />
 </kbd>
 
+## Details Screen.. :astonished:
+
+<kbd>
+  <img src="/assets/details.png" />
+</kbd>
 <!-- [Starter Project](https://github.com/jgsensei/store-app) -->
 
 ## Get Started
