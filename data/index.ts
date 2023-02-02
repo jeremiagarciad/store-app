@@ -1,4 +1,10 @@
-import { Job } from "../interfaces";
+import { Job, User } from "../interfaces";
+
+export const user: User = {
+  id: 0,
+  name: "John Doe",
+  image: require("../assets/images/avatar.png"),
+};
 
 export const Jobs: Job[] = [
   {
