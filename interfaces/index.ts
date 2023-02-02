@@ -1,3 +1,11 @@
+import { ImageSourcePropType } from "react-native";
+
+export interface User {
+  id: number;
+  name: string;
+  image: string | ImageSourcePropType;
+}
+
 interface requirements {
   items: {
     level: string;
@@ -25,7 +33,7 @@ export interface Job {
   salary: string;
   time_duration: string;
   time: string;
-  image: string;
+  image: ImageSourcePropType | string;
   description_job: string;
   requirements: requirements;
   benefit: string;
