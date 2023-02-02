@@ -2,8 +2,15 @@ interface requirements {
   items: {
     level: string;
     knowledge: string;
-    programing_language: string,
-  }
+    programing_language: string;
+  };
+}
+
+interface TimePosted {
+  time: {
+    created_at: number | string;
+    endAt: number | string;
+  };
 }
 
 interface enterprise {
@@ -14,7 +21,6 @@ interface enterprise {
 }
 
 export interface Job {
-  [x: string]: any;
   position: string;
   salary: string;
   time_duration: string;
@@ -24,4 +30,6 @@ export interface Job {
   requirements: requirements;
   benefit: string;
   company: enterprise[];
+  time_posted: TimePosted;
+  available: boolean;
 }
