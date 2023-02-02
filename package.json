@@ -1,5 +1,5 @@
 {
-  "name": "store-app",
+  "name": "daily_ui_challenge_#100days",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
