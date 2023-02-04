@@ -1,4 +1,4 @@
-import { Job, User } from "../interfaces";
+import { Job, User, recent_jobs } from "../interfaces";
 
 export const user: User = {
   id: 0,
@@ -6,11 +6,22 @@ export const user: User = {
   image: require("../assets/images/avatar.png"),
 };
 
+export const recent_job_posted: recent_jobs[] = [
+  {
+    name_company: "Slack",
+    location: "California",
+    job: "Senior UX/UI Designer",
+    work_period: "Full-time",
+    salary: "$50K - $80K",
+    image: "",
+  },
+];
+
 export const Jobs: Job[] = [
   {
     position: "Frontend Developer",
     salary: "$500",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "2 months",
     image: "image.png",
     description_job: "This job is for a frontend developer",
@@ -42,7 +53,7 @@ export const Jobs: Job[] = [
   {
     position: "Backend Developer",
     salary: "$600",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "3 months",
     image: "image.png",
     description_job: "This job is for a backend developer",
@@ -74,7 +85,7 @@ export const Jobs: Job[] = [
   {
     position: "Data Scientist",
     salary: "$800",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "4 months",
     image: "image.png",
     description_job: "This job is for a data scientist",
@@ -106,7 +117,7 @@ export const Jobs: Job[] = [
   {
     position: "Software Engineer",
     salary: "$700",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "3 months",
     image: "image.png",
     description_job: "This job is for a software engineer",
@@ -138,7 +149,7 @@ export const Jobs: Job[] = [
   {
     position: "UX Designer",
     salary: "$600",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "3 months",
     image: "image.png",
     description_job: "This job is for a UX designer",
@@ -170,7 +181,7 @@ export const Jobs: Job[] = [
   {
     position: "QA Engineer",
     salary: "$600",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "3 months",
     image: "image.png",
     description_job: "This job is for a QA engineer",
@@ -202,7 +213,7 @@ export const Jobs: Job[] = [
   {
     position: "Product Manager",
     salary: "$900",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "4 months",
     image: "image.png",
     description_job: "This job is for a product manager",
@@ -233,7 +244,7 @@ export const Jobs: Job[] = [
   {
     position: "UX/UI Designer",
     salary: "$500",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "2 months",
     image: "image.png",
     description_job: "This profile is for a UX/UI Designer",
@@ -265,7 +276,7 @@ export const Jobs: Job[] = [
   {
     position: "Senior UX/UI Designer",
     salary: "$600",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "3 months",
     image: "image.png",
     description_job: "This profile is for a Senior UX/UI Designer",
@@ -297,7 +308,7 @@ export const Jobs: Job[] = [
   {
     position: "Lead UX Designer",
     salary: "$700",
-    time_duration: "Full-time",
+    work_period: "Full-time",
     time: "4 months",
     image: "image.png",
     description_job: "This profile is for a Lead UX Designer",

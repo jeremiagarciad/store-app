@@ -1,5 +1,13 @@
 import { ImageSourcePropType } from "react-native";
 
+export interface recent_jobs {
+  name_company: string;
+  location: string;
+  job: string;
+  work_period: string;
+  salary: number | string;
+  image: ImageSourcePropType | string;
+}
 export interface User {
   id: number;
   name: string;
@@ -31,7 +39,7 @@ interface enterprise {
 export interface Job {
   position: string;
   salary: string;
-  time_duration: string;
+  work_period: string;
   time: string;
   image: ImageSourcePropType | string;
   description_job: string;
