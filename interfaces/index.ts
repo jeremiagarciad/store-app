@@ -1,6 +1,7 @@
 import { ImageSourcePropType } from "react-native";
 
 export interface recent_jobs {
+  id: number;
   name_company: string;
   location: string;
   job: string;

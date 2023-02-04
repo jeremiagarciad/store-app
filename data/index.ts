@@ -8,12 +8,49 @@ export const user: User = {
 
 export const recent_job_posted: recent_jobs[] = [
   {
+    id: 0,
     name_company: "Slack",
     location: "California",
     job: "Senior UX/UI Designer",
     work_period: "Full-time",
     salary: "$50K - $80K",
-    image: "",
+    image: require("../assets/icons-company/slack.png"),
+  },
+  {
+    id: 1,
+    name_company: "Microsoft",
+    location: "Washington",
+    job: "Software Engineer",
+    work_period: "Full-time",
+    salary: "$90K - $120K",
+    image: require("../assets/icons-company/microsoft.png"),
+  },
+  {
+    id: 2,
+    name_company: "Google",
+    location: "California",
+    job: "Software Developer",
+    work_period: "Full-time",
+    salary: "$90K - $120K",
+    image: require("../assets/icons-company/google.png"),
+  },
+  {
+    id: 3,
+    name_company: "Apple",
+    location: "California",
+    job: "Software Engineer",
+    work_period: "Full-time",
+    salary: "$90K - $120K",
+    image: require("../assets/icons-company/apple.png"),
+  },
+  {
+    id: 4,
+    name_company: "Nike",
+    location: "Oregon",
+    job: "Product Designer",
+    work_period: "Full-time",
+    salary: "$50K - $80K",
+    image: require("../assets/icons-company/nike.png"),
   },
 ];
 

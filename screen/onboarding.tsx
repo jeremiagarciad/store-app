@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -9,12 +9,19 @@ import { RootStackParamList } from "../types-navigation";
 
 import Colors from "../constants/colors";
 import Fonts from "../constants/fonts";
-import Spacing from "../constants/Spacing";
+import Spacing, {
+  HEIGHT_SCREEN,
+  isSmall,
+  WIDTH_SCREEN,
+} from "../constants/Spacing";
+
+console.log(HEIGHT_SCREEN);
 
 type Props = NativeStackScreenProps<RootStackParamList, "Onboarding">;
 
 export default function Onboarding({ navigation: { navigate } }: Props) {
   const insets = useSafeAreaInsets();
+  const activeScreen = WIDTH_SCREEN;
 
   return (
     <View
@@ -25,6 +32,7 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
         backgroundColor: Colors.background,
         paddingTop: insets.top,
         paddingBottom: insets.bottom,
+        position: "relative",
       }}
     >
       <View>
@@ -38,22 +46,35 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
         </Text>
       </View>
 
-      <View>
+      <View
+        style={{
+          width: "100%",
+          height: 400,
+          marginHorizontal: 16,
+        }}
+      >
         <Image
-          style={{ width: 450, height: 450 }}
+          style={{
+            width: "100%",
+            height: 400,
+          }}
           source={require("../assets/images/onboarding-image.jpg")}
+          resizeMode="cover"
         />
       </View>
 
       <View>
         <Text
-          style={{
-            paddingHorizontal: Spacing,
-            marginTop: Spacing,
-            fontFamily: Fonts["poppins-semiBold"],
-            fontSize: Spacing * 4,
-            textAlign: "center",
-          }}
+          style={[
+            {
+              paddingHorizontal: Spacing,
+              fontFamily: Fonts["poppins-semiBold"],
+              textAlign: "center",
+              fontSize:
+                activeScreen === isSmall ? Spacing * 2.5 : Spacing * 4.5,
+              // color: activeScreen === isSmall ? "red" : "green",
+            },
+          ]}
         >
           Everything you need in one app
         </Text>
@@ -62,7 +83,7 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
             paddingHorizontal: Spacing,
             marginTop: Spacing,
             fontFamily: Fonts["poppins-regular"],
-            fontSize: Spacing * 2,
+            fontSize: activeScreen === isSmall ? Spacing * 1.4 : Spacing * 2,
             textAlign: "center",
           }}
         >
@@ -70,7 +91,12 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
         </Text>
       </View>
 
-      <View>
+      <View
+        style={{
+          position: "absolute",
+          bottom: 16,
+        }}
+      >
         <TouchableOpacity
           onPress={() => navigate("Root")}
           activeOpacity={0.8}
@@ -78,7 +104,7 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-            width: 350,
+            width: "100%",
             height: 70,
             borderWidth: 1,
             backgroundColor: Colors.darkText,
