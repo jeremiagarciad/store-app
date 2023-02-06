@@ -23,7 +23,6 @@ import { RootStackParamList } from "../types-navigation";
 import { Ionicons } from "@expo/vector-icons";
 
 import Spacing from "../constants/Spacing";
-import Colors from "../constants/colors";
 
 const BottomTabs = createBottomTabNavigator();
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -45,83 +44,84 @@ function RootNavigator() {
       }}
     >
       <Stack.Screen name="Onboarding" component={Onboarding} />
-      <Stack.Screen name="Root" component={MyBottomTabs} />
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Job-detail" component={JobDetail} />
     </Stack.Navigator>
   );
 }
 
-function MyBottomTabs() {
-  return (
-    <BottomTabs.Navigator
-      screenOptions={{
-        headerShown: false,
-        tabBarShowLabel: false,
-        tabBarStyle: style.tabBarStyle,
-      }}
-    >
-      <BottomTabs.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{
-          tabBarIcon: ({ focused, size }) => (
-            <Ionicons
-              name="home-sharp"
-              size={Spacing * 3}
-              color={focused ? Colors.backgroundCart : Colors.gray}
-            />
-          ),
-        }}
-      />
-      <BottomTabs.Screen
-        name="Notifications"
-        component={Notifications}
-        options={{
-          tabBarIcon: ({ focused, size }) => (
-            <Ionicons
-              name="notifications-circle-sharp"
-              size={Spacing * 3}
-              color={focused ? Colors.backgroundCart : Colors.gray}
-            />
-          ),
-        }}
-      />
-      <BottomTabs.Screen
-        name="Profile"
-        component={JobDetail}
-        options={{
-          tabBarIcon: ({ focused, size }) => (
-            <Ionicons
-              name="person-sharp"
-              size={Spacing * 3}
-              color={focused ? Colors.backgroundCart : Colors.gray}
-            />
-          ),
-        }}
-      />
-      <BottomTabs.Screen
-        name="Settings"
-        component={Settings}
-        options={{
-          tabBarIcon: ({ focused }) => (
-            <Ionicons
-              name="settings-sharp"
-              size={Spacing * 3}
-              color={focused ? Colors.backgroundCart : Colors.gray}
-            />
-          ),
-        }}
-      />
-    </BottomTabs.Navigator>
-  );
-}
+// function MyBottomTabs() {
+//   return (
+//     <BottomTabs.Navigator
+//       screenOptions={{
+//         headerShown: false,
+//         tabBarShowLabel: false,
+//         // tabBarStyle: style.tabBarStyle,
+//       }}
+//     >
+//       <BottomTabs.Screen
+//         name="Home"
+//         component={HomeScreen}
+//         options={{
+//           tabBarIcon: ({ focused, size }) => (
+//             <Ionicons
+//               name="home-sharp"
+//               size={Spacing * 3}
+//               color={focused ? Colors.backgroundCart : Colors.gray}
+//             />
+//           ),
+//         }}
+//       />
+//       <BottomTabs.Screen
+//         name="Notifications"
+//         component={Notifications}
+//         options={{
+//           tabBarIcon: ({ focused, size }) => (
+//             <Ionicons
+//               name="notifications-circle-sharp"
+//               size={Spacing * 3}
+//               color={focused ? Colors.backgroundCart : Colors.gray}
+//             />
+//           ),
+//         }}
+//       />
+//       <BottomTabs.Screen
+//         name="Profile"
+//         component={JobDetail}
+//         options={{
+//           tabBarIcon: ({ focused, size }) => (
+//             <Ionicons
+//               name="person-sharp"
+//               size={Spacing * 3}
+//               color={focused ? Colors.backgroundCart : Colors.gray}
+//             />
+//           ),
+//         }}
+//       />
+//       <BottomTabs.Screen
+//         name="Settings"
+//         component={Settings}
+//         options={{
+//           tabBarIcon: ({ focused }) => (
+//             <Ionicons
+//               name="settings-sharp"
+//               size={Spacing * 3}
+//               color={focused ? Colors.backgroundCart : Colors.gray}
+//             />
+//           ),
+//         }}
+//       />
+//     </BottomTabs.Navigator>
+//   );
+// }
 
-const style = StyleSheet.create({
-  tabBarStyle: {
-    height: 80,
-    position: "absolute",
-    marginHorizontal: 10,
-    borderRadius: 16,
-    bottom: 10,
-    backgroundColor: Colors.lightGray,
-  },
-});
+// const style = StyleSheet.create({
+//   // tabBarStyle: {
+//   //   height: 80,
+//   //   position: "absolute",
+//   //   marginHorizontal: 10,
+//   //   borderRadius: 16,
+//   //   bottom: 10,
+//   //   backgroundColor: "rgba(255, 255, 255, 0.4)",
+//   // },
+// });

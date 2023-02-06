@@ -21,7 +21,8 @@ type Props = NativeStackScreenProps<RootStackParamList, "Onboarding">;
 
 export default function Onboarding({ navigation: { navigate } }: Props) {
   const insets = useSafeAreaInsets();
-  const activeScreen = WIDTH_SCREEN;
+
+  const compare = WIDTH_SCREEN <= isSmall;
 
   return (
     <View
@@ -70,8 +71,7 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
               paddingHorizontal: Spacing,
               fontFamily: Fonts["poppins-semiBold"],
               textAlign: "center",
-              fontSize:
-                activeScreen === isSmall ? Spacing * 2.5 : Spacing * 4.5,
+              fontSize: compare ? Spacing * 2.5 : Spacing * 4.5,
               // color: activeScreen === isSmall ? "red" : "green",
             },
           ]}
@@ -83,7 +83,7 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
             paddingHorizontal: Spacing,
             marginTop: Spacing,
             fontFamily: Fonts["poppins-regular"],
-            fontSize: activeScreen === isSmall ? Spacing * 1.4 : Spacing * 2,
+            fontSize: compare ? Spacing * 1.4 : Spacing * 2,
             textAlign: "center",
           }}
         >
@@ -98,7 +98,7 @@ export default function Onboarding({ navigation: { navigate } }: Props) {
         }}
       >
         <TouchableOpacity
-          onPress={() => navigate("Root")}
+          onPress={() => navigate("Home")}
           activeOpacity={0.8}
           style={{
             flexDirection: "row",

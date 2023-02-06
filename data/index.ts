@@ -60,7 +60,7 @@ export const Jobs: Job[] = [
     salary: "$500",
     work_period: "Full-time",
     time: "2 months",
-    image: "image.png",
+    image: require("../assets/icons-company/google.png"),
     description_job: "This job is for a frontend developer",
     requirements: {
       items: {
@@ -73,7 +73,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Google",
-        image: "google.jpg",
+        image: require("../assets/icons-company/google.png"),
         location: "Mountain View, CA",
         company_description:
           "Google is an American multinational technology company specializing in Internet-related services and products",
@@ -92,7 +92,7 @@ export const Jobs: Job[] = [
     salary: "$600",
     work_period: "Full-time",
     time: "3 months",
-    image: "image.png",
+    image: require("../assets/icons-company/amazon.png"),
     description_job: "This job is for a backend developer",
     requirements: {
       items: {
@@ -105,7 +105,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Amazon",
-        image: "amazon.jpg",
+        image: require("../assets/icons-company/amazon.png"),
         location: "Seattle, WA",
         company_description:
           "Amazon is an American multinational technology company specializing in e-commerce, cloud computing, digital streaming, and artificial intelligence",
@@ -124,7 +124,7 @@ export const Jobs: Job[] = [
     salary: "$800",
     work_period: "Full-time",
     time: "4 months",
-    image: "image.png",
+    image: require("../assets/icons-company/facebook.png"),
     description_job: "This job is for a data scientist",
     requirements: {
       items: {
@@ -137,7 +137,8 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Facebook",
-        image: "facebook.jpg",
+
+        image: require("../assets/icons-company/facebook.png"),
         location: "Menlo Park, CA",
         company_description:
           "Facebook is an American online social media and social networking service company",
@@ -156,7 +157,7 @@ export const Jobs: Job[] = [
     salary: "$700",
     work_period: "Full-time",
     time: "3 months",
-    image: "image.png",
+    image: require("../assets/icons-company/netflix.png"),
     description_job: "This job is for a software engineer",
     requirements: {
       items: {
@@ -169,7 +170,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Netflix",
-        image: "netflix.jpg",
+        image: require("../assets/icons-company/netflix.png"),
         location: "Los Gatos, CA",
         company_description:
           "Netflix, Inc. is an American over-the-top content platform and production company",
@@ -188,7 +189,7 @@ export const Jobs: Job[] = [
     salary: "$600",
     work_period: "Full-time",
     time: "3 months",
-    image: "image.png",
+    image: require("../assets/icons-company/airbnb.png"),
     description_job: "This job is for a UX designer",
     requirements: {
       items: {
@@ -201,7 +202,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Airbnb",
-        image: "airbnb.jpg",
+        image: require("../assets/icons-company/airbnb.png"),
         location: "San Francisco, CA",
         company_description:
           "Airbnb is an American vacation rental online marketplace company",
@@ -220,7 +221,7 @@ export const Jobs: Job[] = [
     salary: "$600",
     work_period: "Full-time",
     time: "3 months",
-    image: "image.png",
+    image: require("../assets/icons-company/uber.png"),
     description_job: "This job is for a QA engineer",
     requirements: {
       items: {
@@ -233,7 +234,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Uber",
-        image: "uber.jpg",
+        image: require("../assets/icons-company/uber.png"),
         location: "San Francisco, CA",
         company_description:
           "Uber Technologies, Inc. is an American multinational ride-hailing company",
@@ -252,7 +253,7 @@ export const Jobs: Job[] = [
     salary: "$900",
     work_period: "Full-time",
     time: "4 months",
-    image: "image.png",
+    image: require("../assets/icons-company/dropbox.png"),
     description_job: "This job is for a product manager",
     requirements: {
       items: {
@@ -265,7 +266,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Dropbox",
-        image: "dropbox.jpg",
+        image: require("../assets/icons-company/dropbox.png"),
         location: "San Francisco, CA",
         company_description: "Dropbox is an American file hosting service",
       },
@@ -283,7 +284,7 @@ export const Jobs: Job[] = [
     salary: "$500",
     work_period: "Full-time",
     time: "2 months",
-    image: "image.png",
+    image: require("../assets/icons-company/microsoft.png"),
     description_job: "This profile is for a UX/UI Designer",
     requirements: {
       items: {
@@ -296,7 +297,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Microsoft",
-        image: "microsoft.jpg",
+        image: require("../assets/icons-company/microsoft.png"),
         location: "Redmond, WA",
         company_description:
           "Microsoft is an American multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, and personal computers.",
@@ -315,7 +316,7 @@ export const Jobs: Job[] = [
     salary: "$600",
     work_period: "Full-time",
     time: "3 months",
-    image: "image.png",
+    image: require("../assets/icons-company/apple.png"),
     description_job: "This profile is for a Senior UX/UI Designer",
     requirements: {
       items: {
@@ -328,7 +329,7 @@ export const Jobs: Job[] = [
     company: [
       {
         enterprise: "Apple",
-        image: "apple.jpg",
+        image: require("../assets/icons-company/apple.png"),
         location: "Cupertino, CA",
         company_description:
           "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.",

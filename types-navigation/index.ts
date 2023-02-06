@@ -10,10 +10,7 @@ declare global {
 export type RootStackParamList = {
   Onboarding: undefined;
   Home: undefined;
-  "Job-detail": { job: Job };
-  Notifications: undefined;
-  Settings: undefined;
-  Root: undefined;
+  "Job-detail": { good_jobs: Job };
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
