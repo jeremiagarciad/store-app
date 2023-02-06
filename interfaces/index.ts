@@ -7,12 +7,12 @@ export interface recent_jobs {
   job: string;
   work_period: string;
   salary: number | string;
-  image: ImageSourcePropType | string;
+  image: string;
 }
 export interface User {
   id: number;
   name: string;
-  image: string | ImageSourcePropType;
+  image: string;
 }
 
 interface requirements {
@@ -42,11 +42,11 @@ export interface Job {
   salary: string;
   work_period: string;
   time: string;
-  image: ImageSourcePropType | string;
+  image: string;
   description_job: string;
   requirements: requirements;
   benefit: string;
-  company: enterprise[];
+  company: enterprise;
   time_posted: TimePosted;
   available: boolean;
 }

@@ -57,28 +57,29 @@ export const recent_job_posted: recent_jobs[] = [
 export const Jobs: Job[] = [
   {
     position: "Frontend Developer",
-    salary: "$500",
+    salary: "$75K - $110K",
     work_period: "Full-time",
     time: "2 months",
     image: require("../assets/icons-company/google.png"),
-    description_job: "This job is for a frontend developer",
+    description_job:
+      "Google is looking for an experienced and talented Frontend Developer to join our team. The ideal candidate will have a passion for creating high-quality user experiences.",
     requirements: {
       items: {
-        level: "Medium",
-        knowledge: "JavaScript, HTML/CSS",
+        level:
+          "At Google, frontend developers are expected to have a deep understanding of HTML, CSS, and JavaScript, as well as a good understanding of DOM manipulation, AJAX and other web technologies. They should also be familiar with cross-browser compatibility issues, accessibility standards.",
+        knowledge:
+          "The Frontend Developer will be responsible for developing user interfaces for Google products and services. This includes creating HTML, CSS, and JavaScript code to create a seamless user experience. The Frontend Developer must also be able to troubleshoot and debug any issues with existing code.",
         programing_language: "React",
       },
     },
     benefit: "Free meals and gym membership",
-    company: [
-      {
-        enterprise: "Google",
-        image: require("../assets/icons-company/google.png"),
-        location: "Mountain View, CA",
-        company_description:
-          "Google is an American multinational technology company specializing in Internet-related services and products",
-      },
-    ],
+    company: {
+      enterprise: "Google",
+      image: require("../assets/icons-company/google.png"),
+      location: "California",
+      company_description:
+        "Google is an American multinational technology company specializing in Internet-related services and products",
+    },
     time_posted: {
       time: {
         created_at: 1,
@@ -89,28 +90,30 @@ export const Jobs: Job[] = [
   },
   {
     position: "Backend Developer",
-    salary: "$600",
+    salary: "$65K - $100K",
     work_period: "Full-time",
     time: "3 months",
     image: require("../assets/icons-company/amazon.png"),
-    description_job: "This job is for a backend developer",
+    description_job:
+      "As a Backend Developer at Amazon, you will be responsible for designing, developing, testing, and deploying software solutions to improve customer experience. You will work closely with other developers, product managers, and other stakeholders to create robust and scalable software solutions.",
     requirements: {
       items: {
-        level: "High",
-        knowledge: "JavaScript, Node.js",
+        level:
+          "Writing unit and integration tests to ensure code quality and scalability, Working in an Agile/Scrum development environment to ensure timely delivery of software solutions, Collaborating with teams to develop innovative solutions to customer experience problems Troubleshooting and resolving technical issues, Participating in code reviews to ensure code quality and consistency",
+        knowledge:
+          "Designing, developing, and deploying quality solutions that are scalable and secure Developing and maintaining application software solutions using various languages like Java, C#, Python, and others",
         programing_language: "Express",
       },
     },
     benefit: "Free meals and Health Insurance",
-    company: [
-      {
-        enterprise: "Amazon",
-        image: require("../assets/icons-company/amazon.png"),
-        location: "Seattle, WA",
-        company_description:
-          "Amazon is an American multinational technology company specializing in e-commerce, cloud computing, digital streaming, and artificial intelligence",
-      },
-    ],
+    company: {
+      enterprise: "Amazon",
+      image: require("../assets/icons-company/amazon.png"),
+      location: "Seattle, WA",
+      company_description:
+        "Amazon is an American multinational technology company specializing in e-commerce, cloud computing, digital streaming, and artificial intelligence",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -121,8 +124,8 @@ export const Jobs: Job[] = [
   },
   {
     position: "Data Scientist",
-    salary: "$800",
-    work_period: "Full-time",
+    salary: "$80K - $120K",
+    work_period: "Part-time",
     time: "4 months",
     image: require("../assets/icons-company/facebook.png"),
     description_job: "This job is for a data scientist",
@@ -134,16 +137,15 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and Health Insurance",
-    company: [
-      {
-        enterprise: "Facebook",
+    company: {
+      enterprise: "Facebook",
 
-        image: require("../assets/icons-company/facebook.png"),
-        location: "Menlo Park, CA",
-        company_description:
-          "Facebook is an American online social media and social networking service company",
-      },
-    ],
+      image: require("../assets/icons-company/facebook.png"),
+      location: "Menlo Park, CA",
+      company_description:
+        "Facebook is an American online social media and social networking service company",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -154,7 +156,7 @@ export const Jobs: Job[] = [
   },
   {
     position: "Software Engineer",
-    salary: "$700",
+    salary: "$90K - $120K",
     work_period: "Full-time",
     time: "3 months",
     image: require("../assets/icons-company/netflix.png"),
@@ -167,15 +169,14 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and gym membership",
-    company: [
-      {
-        enterprise: "Netflix",
-        image: require("../assets/icons-company/netflix.png"),
-        location: "Los Gatos, CA",
-        company_description:
-          "Netflix, Inc. is an American over-the-top content platform and production company",
-      },
-    ],
+    company: {
+      enterprise: "Netflix",
+      image: require("../assets/icons-company/netflix.png"),
+      location: "Los Gatos, CA",
+      company_description:
+        "Netflix, Inc. is an American over-the-top content platform and production company",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -186,7 +187,7 @@ export const Jobs: Job[] = [
   },
   {
     position: "UX Designer",
-    salary: "$600",
+    salary: "$60K - $80K",
     work_period: "Full-time",
     time: "3 months",
     image: require("../assets/icons-company/airbnb.png"),
@@ -199,15 +200,14 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and Health Insurance",
-    company: [
-      {
-        enterprise: "Airbnb",
-        image: require("../assets/icons-company/airbnb.png"),
-        location: "San Francisco, CA",
-        company_description:
-          "Airbnb is an American vacation rental online marketplace company",
-      },
-    ],
+    company: {
+      enterprise: "Airbnb",
+      image: require("../assets/icons-company/airbnb.png"),
+      location: "San Francisco, CA",
+      company_description:
+        "Airbnb is an American vacation rental online marketplace company",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -218,7 +218,7 @@ export const Jobs: Job[] = [
   },
   {
     position: "QA Engineer",
-    salary: "$600",
+    salary: "$60K - $90K",
     work_period: "Full-time",
     time: "3 months",
     image: require("../assets/icons-company/uber.png"),
@@ -231,15 +231,14 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and gym membership",
-    company: [
-      {
-        enterprise: "Uber",
-        image: require("../assets/icons-company/uber.png"),
-        location: "San Francisco, CA",
-        company_description:
-          "Uber Technologies, Inc. is an American multinational ride-hailing company",
-      },
-    ],
+    company: {
+      enterprise: "Uber",
+      image: require("../assets/icons-company/uber.png"),
+      location: "San Francisco, CA",
+      company_description:
+        "Uber Technologies, Inc. is an American multinational ride-hailing company",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -250,7 +249,7 @@ export const Jobs: Job[] = [
   },
   {
     position: "Product Manager",
-    salary: "$900",
+    salary: "$70K - $95K",
     work_period: "Full-time",
     time: "4 months",
     image: require("../assets/icons-company/dropbox.png"),
@@ -263,14 +262,13 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and Health Insurance",
-    company: [
-      {
-        enterprise: "Dropbox",
-        image: require("../assets/icons-company/dropbox.png"),
-        location: "San Francisco, CA",
-        company_description: "Dropbox is an American file hosting service",
-      },
-    ],
+    company: {
+      enterprise: "Dropbox",
+      image: require("../assets/icons-company/dropbox.png"),
+      location: "San Francisco, CA",
+      company_description: "Dropbox is an American file hosting service",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -281,7 +279,7 @@ export const Jobs: Job[] = [
   },
   {
     position: "UX/UI Designer",
-    salary: "$500",
+    salary: "$50K - $70K",
     work_period: "Full-time",
     time: "2 months",
     image: require("../assets/icons-company/microsoft.png"),
@@ -294,15 +292,14 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and gym membership",
-    company: [
-      {
-        enterprise: "Microsoft",
-        image: require("../assets/icons-company/microsoft.png"),
-        location: "Redmond, WA",
-        company_description:
-          "Microsoft is an American multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, and personal computers.",
-      },
-    ],
+    company: {
+      enterprise: "Microsoft",
+      image: require("../assets/icons-company/microsoft.png"),
+      location: "Redmond, WA",
+      company_description:
+        "Microsoft is an American multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, and personal computers.",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -313,7 +310,7 @@ export const Jobs: Job[] = [
   },
   {
     position: "Senior UX/UI Designer",
-    salary: "$600",
+    salary: "$90K -$120K",
     work_period: "Full-time",
     time: "3 months",
     image: require("../assets/icons-company/apple.png"),
@@ -326,15 +323,14 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and Health Insurance",
-    company: [
-      {
-        enterprise: "Apple",
-        image: require("../assets/icons-company/apple.png"),
-        location: "Cupertino, CA",
-        company_description:
-          "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.",
-      },
-    ],
+    company: {
+      enterprise: "Apple",
+      image: require("../assets/icons-company/apple.png"),
+      location: "Cupertino, CA",
+      company_description:
+        "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.",
+    },
+
     time_posted: {
       time: {
         created_at: 1,
@@ -345,10 +341,10 @@ export const Jobs: Job[] = [
   },
   {
     position: "Lead UX Designer",
-    salary: "$700",
+    salary: "$70K - $90K",
     work_period: "Full-time",
     time: "4 months",
-    image: "image.png",
+    image: require("../assets/icons-company/twitter.png"),
     description_job: "This profile is for a Lead UX Designer",
     requirements: {
       items: {
@@ -358,15 +354,14 @@ export const Jobs: Job[] = [
       },
     },
     benefit: "Free meals and Retirement Plan",
-    company: [
-      {
-        enterprise: "Twitter",
-        image: "twitter.jpg",
-        location: "San Francisco, CA",
-        company_description:
-          'Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets".',
-      },
-    ],
+    company: {
+      enterprise: "Twitter",
+      image: require("../assets/icons-company/twitter.png"),
+      location: "San Francisco, CA",
+      company_description:
+        'Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets".',
+    },
+
     time_posted: {
       time: {
         created_at: 1,

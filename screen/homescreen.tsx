@@ -58,7 +58,7 @@ export default function HomeScreen({ navigation: { navigate } }: Props) {
               lineHeight: 66,
             }}
           >
-            Find your creative Jobs
+            Find your creative Job
           </Text>
         </View>
 
@@ -260,26 +260,64 @@ export default function HomeScreen({ navigation: { navigate } }: Props) {
             See all
           </Text>
         </View>
-
         {Jobs.map((job) => (
           <TouchableOpacity
             key={job.position}
-            onPress={() => navigate("Job-detail")}
+            onPress={() => navigate("Job-detail", { good_jobs: job })}
             style={{
               backgroundColor: Colors.lightGray,
               width: WIDTH_SCREEN - 32,
               height: 70,
               borderRadius: 8,
               marginBottom: 16,
+              padding: 16,
+              flexDirection: "row",
+              alignItems: "center",
             }}
           >
-            <Image
-              source={job.image}
+            <View
               style={{
-                width: 32,
-                height: 32,
+                // borderWidth: 1,
+                width: 48,
+                height: 48,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 8,
+                backgroundColor: Colors.background,
               }}
-            />
+            >
+              <Image
+                source={job.image}
+                style={{
+                  width: 32,
+                  height: 32,
+                }}
+              />
+            </View>
+            <View
+              style={{
+                padding: 4,
+                marginLeft: 8,
+              }}
+            >
+              <Text
+                style={{
+                  fontFamily: Fonts["poppins-semiBold"],
+                  fontSize: 14,
+                }}
+              >
+                {job.position} {""}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: Fonts["poppins-regular"],
+                  fontSize: 12,
+                  lineHeight: 14,
+                }}
+              >
+                {job.company.enterprise} - {job.work_period}
+              </Text>
+            </View>
           </TouchableOpacity>
         ))}
       </View>
